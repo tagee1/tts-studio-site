@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TTS Studio — AI Text to Speech for Windows</title>
-  <meta name="description" content="Professional AI text-to-speech for Windows. Two engines, voice cloning, one-time purchase. No subscription. No cloud. Yours forever." />
+  <meta name="description" content="Professional AI text-to-speech for Windows. Free forever for Fast mode. Upgrade to Pro for unlimited Natural mode and AI enhancement. No cloud. Runs offline." />
 
   <!-- Open Graph -->
   <meta property="og:title" content="TTS Studio — AI Text to Speech for Windows" />
-  <meta property="og:description" content="Two AI voices. Voice cloning. No subscription. One-time purchase." />
+  <meta property="og:description" content="Fast mode free forever. Natural mode + AI Enhancement — try free, upgrade for unlimited." />
   <meta property="og:image" content="logo.png" />
   <meta property="og:type" content="website" />
 
@@ -278,6 +278,21 @@
       line-height: 1.6;
     }
 
+    .pro-badge {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 20px;
+      background: var(--accent-d);
+      color: var(--accent);
+      border: 1px solid rgba(232,148,10,.3);
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+
     /* ── Engines comparison ───────────────────────────────────────────────── */
     .engines {
       display: grid;
@@ -336,9 +351,9 @@
     /* ── Pricing ──────────────────────────────────────────────────────────── */
     .pricing-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
-      max-width: 800px;
+      max-width: 960px;
       margin: 0 auto;
     }
 
@@ -382,8 +397,8 @@
 
     .price-currency { font-size: 20px; font-weight: 700; color: var(--txt2); margin-top: 8px; }
     .price-number { font-size: 56px; font-weight: 800; line-height: 1; color: var(--txt); }
-    .price-was { font-size: 13px; color: var(--txt3); text-decoration: line-through; margin-bottom: 4px; }
-    .price-launch { font-size: 12px; color: var(--accent); font-weight: 600; margin-bottom: 20px; }
+    .price-period { font-size: 16px; color: var(--txt3); align-self: flex-end; margin-bottom: 6px; }
+    .price-note { font-size: 12px; color: var(--txt3); margin-bottom: 20px; }
 
     .price-divider {
       height: 1px;
@@ -402,6 +417,7 @@
     }
 
     .price-features li .check { color: var(--accent); flex-shrink: 0; font-weight: 700; margin-top: 1px; }
+    .price-features li .dim { color: var(--txt3); flex-shrink: 0; font-weight: 700; margin-top: 1px; }
 
     .price-card .btn { width: 100%; justify-content: center; }
 
@@ -469,6 +485,7 @@
 
     .cta-banner h2 { font-size: clamp(24px, 4vw, 40px); font-weight: 800; margin-bottom: 12px; }
     .cta-banner p { color: var(--txt2); margin-bottom: 32px; font-size: 16px; }
+    .cta-banner-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 
     /* ── Footer ───────────────────────────────────────────────────────────── */
     footer {
@@ -561,9 +578,9 @@
         <li><a href="#engines">Engines</a></li>
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="#faq">FAQ</a></li>
-        <li><a href="mailto:support@cookiestudios.dev">Support</a></li>
+        <li><a href="mailto:cookiestudios@gmail.com">Support</a></li>
       </ul>
-      <a href="#pricing" class="btn btn-primary">Buy Now</a>
+      <a href="https://github.com/tagee1/tts-studio/releases/latest" class="btn btn-primary">Download Free</a>
     </div>
   </div>
 </nav>
@@ -572,17 +589,17 @@
 <section class="hero">
   <div class="container">
     <img src="logo.png" alt="TTS Studio" class="hero-logo" />
-    <div class="hero-eyebrow">Windows Desktop App · One-Time Purchase</div>
+    <div class="hero-eyebrow">Windows Desktop App · Free to Download</div>
     <h1>Text to Speech that<br/><span>actually sounds human.</span></h1>
     <p class="hero-sub">
-      Two AI engines. Voice cloning. Audio cleanup. MP3 export.
-      No subscription, no cloud, no monthly bill — yours forever.
+      Fast mode free forever. Two AI engines, voice cloning, audio cleanup, and MP3 export —
+      all running locally on your PC. No cloud. No monthly bill for the basics.
     </p>
     <div class="hero-ctas">
-      <a href="#pricing" class="btn btn-primary btn-lg">Get TTS Studio — from $24</a>
-      <a href="#features" class="btn btn-ghost btn-lg">See what's included</a>
+      <a href="https://github.com/tagee1/tts-studio/releases/latest" class="btn btn-primary btn-lg">⬇ Download Free</a>
+      <a href="#pricing" class="btn btn-ghost btn-lg">See Pro pricing</a>
     </div>
-    <p class="hero-note">Windows 10/11 · Runs 100% offline · Instant download after purchase</p>
+    <p class="hero-note">Windows 10/11 · Runs 100% offline · No credit card required</p>
   </div>
 </section>
 
@@ -590,9 +607,9 @@
 <div class="proof-strip">
   <div class="container">
     <div class="proof-inner">
-      <div class="proof-item"><span class="icon">✓</span> No subscription ever</div>
+      <div class="proof-item"><span class="icon">✓</span> Fast mode free forever</div>
       <div class="proof-item"><span class="icon">✓</span> Runs fully offline</div>
-      <div class="proof-item"><span class="icon">✓</span> Voice cloning included</div>
+      <div class="proof-item"><span class="icon">✓</span> No data sent anywhere</div>
       <div class="proof-item"><span class="icon">✓</span> MP3 + WAV + SRT export</div>
       <div class="proof-item"><span class="icon">✓</span> Instant download</div>
     </div>
@@ -609,9 +626,9 @@
     </div>
     <div class="engines">
       <div class="engine-card">
-        <div class="engine-badge badge-fast">⚡ Fast Mode</div>
+        <div class="engine-badge badge-fast">⚡ Fast Mode — Free Forever</div>
         <h3>Kokoro ONNX</h3>
-        <p>Instant generation. Great for long documents, batch processing, and quick previews. Dozens of voices included.</p>
+        <p>Instant generation. Great for long documents, batch processing, and quick previews. Dozens of voices included. Completely free, no limits.</p>
         <ul class="engine-specs">
           <li>Generates audio in under a second</li>
           <li>30+ built-in voices (US, UK, accents)</li>
@@ -621,14 +638,14 @@
         </ul>
       </div>
       <div class="engine-card featured">
-        <div class="engine-badge badge-natural">✨ Natural Mode</div>
+        <div class="engine-badge badge-natural">🎙️ Natural Mode — Pro</div>
         <h3>Chatterbox AI</h3>
-        <p>The most human-sounding TTS you've heard on a desktop. Powered by Resemble AI's Chatterbox model.</p>
+        <p>The most human-sounding TTS you've heard on a desktop. Try it free 3 times — upgrade to Pro for unlimited generations.</p>
         <ul class="engine-specs">
           <li>Stunningly natural prosody and emotion</li>
           <li>Voice cloning from any audio sample</li>
-          <li>AI watermark included for authenticity</li>
           <li>AI audio cleanup and enhancement</li>
+          <li>AI watermark included for authenticity</li>
           <li>Downloaded once, runs offline forever</li>
         </ul>
       </div>
@@ -644,31 +661,37 @@
     <div class="section-header">
       <div class="section-label">Everything Included</div>
       <h2 class="section-title">A complete TTS studio.<br/>Not a toy.</h2>
-      <p class="section-sub">Every feature ships in the base price. No upsells, no locked tiers.</p>
+      <p class="section-sub">Core tools are free forever. Pro unlocks unlimited Natural mode and AI Enhancement.</p>
     </div>
     <div class="features-grid">
 
       <div class="feature-card">
         <div class="feature-icon">🎙️</div>
-        <h3>Voice Cloning</h3>
+        <h3>Voice Cloning <span class="pro-badge">Pro</span></h3>
         <p>Record 10 seconds of anyone's voice — including your own — and Natural mode will match it. Build a personal library of cloned voices.</p>
       </div>
 
       <div class="feature-card">
+        <div class="feature-icon">✨</div>
+        <h3>AI Audio Enhancement <span class="pro-badge">Pro</span></h3>
+        <p>Resemble AI's enhancement model removes noise and boosts quality after generation. Try it free 3 times — unlimited with Pro.</p>
+      </div>
+
+      <div class="feature-card">
         <div class="feature-icon">🧹</div>
-        <h3>AI Audio Cleanup</h3>
-        <p>One-click enhancement chain: noise reduction, high-pass filter, compression, and gain. Every export sounds studio-ready.</p>
+        <h3>Audio Cleanup</h3>
+        <p>One-click pedalboard chain: noise reduction, high-pass filter, compression, and gain. Available in all tiers.</p>
       </div>
 
       <div class="feature-card">
         <div class="feature-icon">📦</div>
-        <h3>Queue & Batch Export</h3>
+        <h3>Queue &amp; Batch Export</h3>
         <p>Drop in a full script, split by speaker or chapter, and generate everything in one run. Results saved to your history automatically.</p>
       </div>
 
       <div class="feature-card">
         <div class="feature-icon">💾</div>
-        <h3>MP3, WAV & SRT Export</h3>
+        <h3>MP3, WAV &amp; SRT Export</h3>
         <p>Export as WAV, encode to MP3 with custom bitrate and ID3 metadata, or export a properly timed SRT subtitle file.</p>
       </div>
 
@@ -696,12 +719,6 @@
         <p>After the one-time model download, nothing phones home. Your text, your voice, your audio — all stays on your machine.</p>
       </div>
 
-      <div class="feature-card">
-        <div class="feature-icon">🔔</div>
-        <h3>Completion Notifications</h3>
-        <p>Walk away while long scripts generate. Windows toast notification pings you when it's done.</p>
-      </div>
-
     </div>
   </div>
 </section>
@@ -713,60 +730,79 @@
   <div class="container">
     <div class="section-header centered">
       <div class="section-label">Pricing</div>
-      <h2 class="section-title">One price. Yours forever.</h2>
-      <p class="section-sub">Launch week discount — limited time. No renewals, no seats, no nonsense.</p>
+      <h2 class="section-title">Start free. Upgrade when you're ready.</h2>
+      <p class="section-sub">Fast mode is free forever. Upgrade to Pro for unlimited Natural mode and AI Enhancement.</p>
     </div>
 
     <div class="pricing-grid">
 
+      <!-- Free -->
       <div class="price-card">
-        <div class="price-tier">Personal</div>
-        <div class="price-was">$34</div>
+        <div class="price-tier">Free</div>
         <div class="price-amount">
           <span class="price-currency">$</span>
-          <span class="price-number">24</span>
+          <span class="price-number">0</span>
         </div>
-        <div class="price-launch">🚀 Launch week price</div>
+        <div class="price-note">Free forever — no credit card</div>
         <div class="price-divider"></div>
         <ul class="price-features">
-          <li><span class="check">✓</span> Both Fast &amp; Natural engines</li>
-          <li><span class="check">✓</span> Voice cloning library</li>
-          <li><span class="check">✓</span> AI audio cleanup</li>
+          <li><span class="check">✓</span> Fast mode — unlimited (30+ voices)</li>
           <li><span class="check">✓</span> MP3, WAV &amp; SRT export</li>
+          <li><span class="check">✓</span> Queue &amp; batch generation</li>
+          <li><span class="check">✓</span> Audio cleanup tools</li>
           <li><span class="check">✓</span> Persistent history</li>
-          <li><span class="check">✓</span> 1 machine activation</li>
-          <li><span class="check">✓</span> All future updates</li>
-          <li><span class="check">✓</span> Personal use only</li>
+          <li><span class="check">✓</span> Pronunciation dictionary</li>
+          <li><span class="dim">◦</span> Natural mode — 3 free generations to try</li>
+          <li><span class="dim">◦</span> AI Enhancement — 3 free uses to try</li>
         </ul>
-        <a href="YOUR_LS_PERSONAL_URL" class="btn btn-ghost btn-lg">Buy Personal</a>
+        <a href="https://github.com/tagee1/tts-studio/releases/latest" class="btn btn-ghost btn-lg">Download Free</a>
       </div>
 
-      <div class="price-card popular">
-        <div class="popular-tag">Most Popular</div>
-        <div class="price-tier">Commercial</div>
-        <div class="price-was">$69</div>
+      <!-- Pro Monthly -->
+      <div class="price-card">
+        <div class="price-tier">Pro — Monthly</div>
         <div class="price-amount">
           <span class="price-currency">$</span>
-          <span class="price-number">49</span>
+          <span class="price-number">5</span>
+          <span class="price-period">/mo</span>
         </div>
-        <div class="price-launch">🚀 Launch week price</div>
+        <div class="price-note">Cancel anytime</div>
         <div class="price-divider"></div>
         <ul class="price-features">
-          <li><span class="check">✓</span> Everything in Personal</li>
-          <li><span class="check">✓</span> Use in commercial projects</li>
-          <li><span class="check">✓</span> Client work &amp; content creation</li>
-          <li><span class="check">✓</span> Podcasts, YouTube, audiobooks</li>
-          <li><span class="check">✓</span> 2 machine activations</li>
+          <li><span class="check">✓</span> Everything in Free</li>
+          <li><span class="check">✓</span> Unlimited Natural mode</li>
+          <li><span class="check">✓</span> Unlimited AI Enhancement</li>
+          <li><span class="check">✓</span> Voice cloning library</li>
           <li><span class="check">✓</span> Priority support</li>
-          <li><span class="check">✓</span> All future updates</li>
         </ul>
-        <a href="YOUR_LS_COMMERCIAL_URL" class="btn btn-primary btn-lg">Buy Commercial</a>
+        <a href="https://cookiestudios.gumroad.com" class="btn btn-ghost btn-lg">Start Monthly</a>
+      </div>
+
+      <!-- Pro Lifetime -->
+      <div class="price-card popular">
+        <div class="popular-tag">Best Value</div>
+        <div class="price-tier">Pro — Lifetime</div>
+        <div class="price-amount">
+          <span class="price-currency">$</span>
+          <span class="price-number">45</span>
+        </div>
+        <div class="price-note">One-time · yours forever</div>
+        <div class="price-divider"></div>
+        <ul class="price-features">
+          <li><span class="check">✓</span> Everything in Free</li>
+          <li><span class="check">✓</span> Unlimited Natural mode</li>
+          <li><span class="check">✓</span> Unlimited AI Enhancement</li>
+          <li><span class="check">✓</span> Voice cloning library</li>
+          <li><span class="check">✓</span> All future updates included</li>
+          <li><span class="check">✓</span> Priority support</li>
+        </ul>
+        <a href="https://cookiestudios.gumroad.com/l/TTS-Studio" class="btn btn-primary btn-lg">Get Lifetime — $45</a>
       </div>
 
     </div>
 
     <p style="text-align:center; margin-top:24px; font-size:13px; color:var(--txt3);">
-      Secure checkout via Lemon Squeezy · Instant download · 30-day money-back guarantee
+      Secure checkout via Gumroad &nbsp;·&nbsp; Instant license key delivery &nbsp;·&nbsp; 30-day money-back guarantee
     </p>
 
   </div>
@@ -785,8 +821,18 @@
     <div class="faq-list">
 
       <div class="faq-item">
+        <button class="faq-q">What does the free version include? <span class="arrow">▾</span></button>
+        <div class="faq-a">Fast mode is completely free with no limits — 30+ voices, unlimited generations, queue, MP3/WAV/SRT export, audio cleanup, persistent history, and pronunciation dictionary. You also get 3 free Natural mode generations and 3 free AI Enhancement sessions to try before deciding on Pro.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">What does Pro unlock? <span class="arrow">▾</span></button>
+        <div class="faq-a">Pro removes the limits on Natural mode and AI Enhancement, giving you unlimited generations of both. It also unlocks the voice cloning library so you can clone and save custom voices. Pro is available as a $5/month subscription or a $45 one-time lifetime purchase.</div>
+      </div>
+
+      <div class="faq-item">
         <button class="faq-q">Does it work offline? <span class="arrow">▾</span></button>
-        <div class="faq-a">Yes. Fast mode works immediately with no internet. Natural mode downloads the AI model (~3 GB) once on first use, then runs fully offline forever.</div>
+        <div class="faq-a">Yes. Fast mode works immediately with no internet. Natural mode downloads the AI model (~3 GB) once on first use, then runs fully offline forever. The only network request the app ever makes is to validate your license key.</div>
       </div>
 
       <div class="faq-item">
@@ -795,33 +841,28 @@
       </div>
 
       <div class="faq-item">
-        <button class="faq-q">Is there a subscription or renewal fee? <span class="arrow">▾</span></button>
-        <div class="faq-a">Never. You pay once and own it forever, including all future updates to your major version.</div>
+        <button class="faq-q">Lifetime vs Monthly — which should I get? <span class="arrow">▾</span></button>
+        <div class="faq-a">If you plan to use Natural mode regularly, lifetime pays for itself in 9 months compared to monthly. Monthly is great if you just want to try Pro before committing, or if you only need it for a short project.</div>
       </div>
 
       <div class="faq-item">
         <button class="faq-q">What is voice cloning and how does it work? <span class="arrow">▾</span></button>
-        <div class="faq-a">Voice cloning lets Natural mode mimic any voice from a short audio sample (10–30 seconds works great). Record yourself, a client's voice, or use an existing audio clip. The cloned voice is saved to your personal library.</div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-q">Can I use it for commercial content? <span class="arrow">▾</span></button>
-        <div class="faq-a">The Commercial license covers YouTube videos, podcasts, audiobooks, client work, and other commercial projects. The Personal license is for private, non-commercial use only.</div>
+        <div class="faq-a">Voice cloning lets Natural mode mimic any voice from a short audio sample (10–30 seconds works great). Record yourself, a client's voice, or use an existing audio clip. The cloned voice is saved to your personal library and runs entirely on your machine — no audio is ever uploaded.</div>
       </div>
 
       <div class="faq-item">
         <button class="faq-q">What is the AI watermark in Natural mode? <span class="arrow">▾</span></button>
-        <div class="faq-a">Natural mode uses Resemble AI's Chatterbox engine which embeds an inaudible neural watermark (via the Perth library) in all generated audio. This helps establish the audio as AI-generated. It does not affect audio quality and is industry best practice for responsible AI.</div>
+        <div class="faq-a">Natural mode uses Resemble AI's Chatterbox engine which embeds an inaudible neural watermark (via the Perth library) in all generated audio. This helps establish the audio as AI-generated. It does not affect audio quality and is industry best practice for responsible AI use.</div>
       </div>
 
       <div class="faq-item">
-        <button class="faq-q">Can I move my license to a new PC? <span class="arrow">▾</span></button>
-        <div class="faq-a">Yes. You can deactivate from the old machine inside the app (Settings → License → Deactivate) and activate on the new one. Personal gets 1 active machine, Commercial gets 2.</div>
+        <button class="faq-q">Can I move my Pro license to a new PC? <span class="arrow">▾</span></button>
+        <div class="faq-a">Yes. Open Settings → License → Deactivate on the old machine, then enter your key on the new one. If you run into any issues, contact support and we'll sort it out the same day.</div>
       </div>
 
       <div class="faq-item">
         <button class="faq-q">What's the refund policy? <span class="arrow">▾</span></button>
-        <div class="faq-a">30-day money-back guarantee, no questions asked. Contact support@cookiestudios.dev and we'll sort it out the same day.</div>
+        <div class="faq-a">30-day money-back guarantee, no questions asked. Email cookiestudios@gmail.com and we'll sort it out the same day.</div>
       </div>
 
     </div>
@@ -832,9 +873,12 @@
 <section class="section--tight">
   <div class="container">
     <div class="cta-banner">
-      <h2>Stop paying monthly for TTS.</h2>
-      <p>Pay once. Keep it forever. Launch week pricing won't last.</p>
-      <a href="#pricing" class="btn btn-primary btn-lg">Get TTS Studio Today</a>
+      <h2>Start for free. Sound professional.</h2>
+      <p>Download TTS Studio now — Fast mode is free forever, no credit card required.</p>
+      <div class="cta-banner-btns">
+        <a href="https://github.com/tagee1/tts-studio/releases/latest" class="btn btn-primary btn-lg">⬇ Download Free</a>
+        <a href="#pricing" class="btn btn-ghost btn-lg">View Pro pricing</a>
+      </div>
     </div>
   </div>
 </section>
@@ -851,7 +895,7 @@
         <li><a href="#features">Features</a></li>
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="#faq">FAQ</a></li>
-        <li><a href="mailto:support@cookiestudios.dev">Support</a></li>
+        <li><a href="mailto:cookiestudios@gmail.com">Support</a></li>
         <li><a href="privacy.html">Privacy Policy</a></li>
         <li><a href="eula.html">EULA</a></li>
       </ul>
