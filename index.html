@@ -3,18 +3,211 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>VoxWild — offline text-to-speech for Windows</title>
-  <meta name="description" content="Offline Windows desktop app for AI text-to-speech. 13 voices, clones from 6 seconds, runs on your laptop. Fast mode free forever. $89 once for everything." />
 
-  <!-- Open Graph -->
+  <!-- ── Primary SEO ──────────────────────────────────────────────────────── -->
+  <title>VoxWild — Offline AI Text-to-Speech for Windows | Voice Cloning TTS</title>
+  <meta name="description" content="Offline AI text-to-speech for Windows. 13 voices, voice cloning from 6 seconds, runs 100% on your laptop. Free Fast mode. Natural mode for $12/mo or $89 once. ElevenLabs alternative." />
+  <meta name="keywords" content="text to speech, TTS, AI text to speech, AI voice generator, voice cloning, offline TTS, text to speech Windows, AI TTS, free text to speech, voice cloning software, ElevenLabs alternative, local text to speech, AI speech, text to voice, speech synthesis, voice generator" />
+  <meta name="author" content="Cookie Studios" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://voxwild.com/" />
+
+  <!-- ── Open Graph (Facebook, LinkedIn) ──────────────────────────────────── -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="VoxWild — offline text-to-speech for Windows" />
-  <meta property="og:description" content="13 voices, voice cloning from 6 seconds, runs on your laptop. Fast mode free forever. $89 once for Pro — no subscription." />
-  <meta property="og:image" content="https://voxwild.com/logo.png" />
-  <meta property="og:url" content="https://voxwild.com" />
-  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:site_name" content="VoxWild" />
+  <meta property="og:title" content="VoxWild — Offline AI Text-to-Speech for Windows" />
+  <meta property="og:description" content="Offline AI text-to-speech with 13 voices and 6-second voice cloning. Runs 100% on your Windows laptop. Free Fast mode, $12/mo or $89 once for Pro. No cloud, no account." />
+  <meta property="og:image" content="https://voxwild.com/og-image.png" />
+  <meta property="og:image:alt" content="VoxWild — offline AI text-to-speech for Windows with 13 voices and 6-second voice cloning. Free, $12/mo, or $89 once." />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:url" content="https://voxwild.com/" />
+  <meta property="og:locale" content="en_US" />
 
+  <!-- ── Twitter Card ─────────────────────────────────────────────────────── -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="VoxWild — Offline AI Text-to-Speech for Windows" />
+  <meta name="twitter:description" content="13 voices, voice cloning from 6 seconds, 100% offline. Free Fast mode. $12/mo or $89 once for Pro." />
+  <meta name="twitter:image" content="https://voxwild.com/og-image.png" />
+
+  <!-- ── Favicons / manifest ─────────────────────────────────────────────── -->
   <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="apple-touch-icon" href="logo.png" />
+  <meta name="theme-color" content="#0d0d0d" />
+
+  <!-- ── JSON-LD: SoftwareApplication + Organization + FAQPage ───────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://voxwild.com/#software",
+        "name": "VoxWild",
+        "alternateName": "VoxWild AI TTS",
+        "applicationCategory": "MultimediaApplication",
+        "applicationSubCategory": "Text-to-Speech",
+        "operatingSystem": "Windows 10, Windows 11",
+        "description": "Offline AI text-to-speech desktop app for Windows. Features 13 built-in voices (US and UK, male and female), voice cloning from a 6-second reference sample, AI audio enhancement, batch queue generation, and MP3/WAV/SRT export. Runs 100% locally with no cloud dependency. Includes Kokoro TTS (Fast mode) and Chatterbox TTS (Natural mode) open-source speech models.",
+        "url": "https://voxwild.com/",
+        "downloadUrl": "https://github.com/tagee1/VoxWild/releases/latest/download/VoxWild-Setup.exe",
+        "softwareVersion": "1.1.2",
+        "fileSize": "377MB",
+        "screenshot": "https://voxwild.com/logo.png",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "VoxWild Free",
+            "price": "0",
+            "priceCurrency": "USD",
+            "description": "Free forever. Unlimited Fast mode (Kokoro TTS). 3 free Natural mode generations and 3 free AI enhancement uses.",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "VoxWild Pro Monthly",
+            "price": "12",
+            "priceCurrency": "USD",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "12",
+              "priceCurrency": "USD",
+              "billingDuration": "P1M"
+            },
+            "description": "Unlimited Natural mode, unlimited voice cloning, unlimited AI enhancement. Cancel anytime.",
+            "url": "https://cookiestudios.gumroad.com/l/VoxWildPro",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "VoxWild Pro Lifetime",
+            "price": "89",
+            "priceCurrency": "USD",
+            "description": "One-time payment. All future updates included. Pays for itself in about 7 months vs monthly.",
+            "url": "https://cookiestudios.gumroad.com/l/VoxWildProLifetime",
+            "availability": "https://schema.org/InStock"
+          }
+        ],
+        "featureList": [
+          "13 built-in voices (US and UK English, male and female)",
+          "Voice cloning from 6-second reference sample",
+          "AI audio enhancement (Resemble Enhance)",
+          "Batch queue generation for long text",
+          "Multi-speaker dialogue mode",
+          "MP3, WAV, and SRT subtitle export",
+          "Runs 100% offline on your Windows PC",
+          "No account required, no cloud dependency",
+          "Unlimited character generation (no caps)"
+        ],
+        "author": {
+          "@id": "https://voxwild.com/#org"
+        },
+        "publisher": {
+          "@id": "https://voxwild.com/#org"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://voxwild.com/#org",
+        "name": "Cookie Studios",
+        "url": "https://voxwild.com/",
+        "logo": "https://voxwild.com/logo.png",
+        "email": "cookiestudios.dev@gmail.com",
+        "sameAs": [
+          "https://github.com/tagee1",
+          "https://cookiestudios.gumroad.com"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://voxwild.com/#website",
+        "url": "https://voxwild.com/",
+        "name": "VoxWild",
+        "description": "Offline AI text-to-speech for Windows with voice cloning",
+        "publisher": { "@id": "https://voxwild.com/#org" },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://voxwild.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "The installer is unsigned. Is it safe?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. SmartScreen warns because code-signing certificates cost ~$400/year and VoxWild is a small indie shop. The installer is hosted on GitHub Releases (public repo, every commit is visible) and you can inspect every line of Python before trusting it. We plan to get the exe signed once revenue justifies the cost."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does VoxWild actually run offline?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The only network requests the app ever makes are a single HTTPS call to Gumroad when you enter a license key, and a daily check to GitHub for new versions. Your text, your audio, your voice clones — none of it leaves your computer. No account required."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What file formats can VoxWild export?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "MP3 with configurable bitrate and ID3 metadata, WAV 16-bit, and SRT subtitle files timed to the audio. FLAC export is on the roadmap."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there a maximum text length for text-to-speech?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, VoxWild has no text-length limit. The queue splits long text into chunks at sentence boundaries and concatenates the output. It has been tested with book-length scripts."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use VoxWild audio commercially?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, on every tier including the Free tier, for both the Fast (Kokoro) and Natural (Chatterbox) engines. Chatterbox output includes an inaudible neural watermark (Perth) required by the upstream license. Voice cloning requires that you have rights to the source voice."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How good is 6-second voice cloning?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Good enough to fool a listener in a podcast context, though not good enough to fool the cloned person's spouse. Longer reference samples (30–60 seconds of clean audio) produce noticeably better clones. Audio quality of the source matters more than length."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the refund policy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "14 days, no questions asked, through Gumroad. Reply to your receipt email and ask for a refund."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I move my license to a new PC?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. A single VoxWild license activates on up to two machines. If the old one is dead and you need a seat freed, email us and we'll release it the same day."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is VoxWild available for Mac or Linux?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Windows only right now. Mac support is possible since the underlying models run on Apple Silicon, but packaging and testing on a second platform is a lot of work for a small team."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 
   <style>
     /* ─── Reset ───────────────────────────────────────────────────────────── */
@@ -825,8 +1018,8 @@
   <!-- ─── NAV ─────────────────────────────────────────────────────────────── -->
   <nav>
     <div class="container nav-inner">
-      <a href="#" class="brand">
-        <img src="logo.png" alt="VoxWild" />
+      <a href="#" class="brand" aria-label="VoxWild — offline AI text-to-speech for Windows">
+        <img src="logo.png" alt="VoxWild offline AI text-to-speech logo — emerald sound wave" width="28" height="28" />
         <span>VoxWild</span>
       </a>
       <ul class="nav-links">
@@ -850,7 +1043,7 @@
         </h1>
 
         <p class="hero-sub">
-          A Windows desktop app with 13 built-in voices, voice cloning from a 6-second sample, AI enhancement, and queue-based batch generation. Fast mode is <strong>free forever</strong>. Pro unlocks everything else — <strong>$12/mo</strong> or <strong>$89 once</strong>, your call.
+          A Windows desktop app for AI text-to-speech with 13 built-in voices, voice cloning from a 6-second sample, AI audio enhancement, and queue-based batch generation. Runs 100% offline — no cloud, no account, no character caps. Fast mode is <strong>free forever</strong>. Pro unlocks everything — <strong>$12/mo</strong> or <strong>$89 once</strong>, your call.
         </p>
 
         <div class="hero-cta">
@@ -892,9 +1085,9 @@
     <div class="container">
       <div class="section-head">
         <div class="eyebrow">Two engines</div>
-        <h2>Because voice is a trade-off.</h2>
+        <h2>Two AI text-to-speech engines, because voice is a trade-off.</h2>
         <p>
-          Kokoro is the "done in half a second" engine. Chatterbox is the "wait a bit, get something you'd actually play for a client" engine. Pick per line, per project, whenever.
+          Kokoro is the "done in half a second" TTS engine — instant speech synthesis, no GPU needed. Chatterbox is the "wait a bit, get something you'd actually play for a client" engine — human-sounding narration with voice cloning. Pick per line, per project, whenever.
         </p>
       </div>
 
@@ -943,9 +1136,9 @@
     <div class="container">
       <div class="section-head">
         <div class="eyebrow">Pricing</div>
-        <h2>Vs. everyone else.</h2>
+        <h2>VoxWild vs. ElevenLabs, Murf, and PlayHT.</h2>
         <div class="pricing-intro">
-          Three ways to pay, one app. Free if Fast mode is enough. Monthly if you want flexibility. Lifetime if you're in for the long haul.
+          Three ways to pay, one app. Free if Fast mode text-to-speech is enough. Monthly if you want flexibility. Lifetime if you're in for the long haul.
         </div>
       </div>
 
@@ -1071,9 +1264,9 @@
     <div class="container">
       <div class="section-head">
         <div class="eyebrow">What's inside</div>
-        <h2>No black boxes.</h2>
+        <h2>Open-source AI speech models. No black boxes.</h2>
         <p>
-          VoxWild is a Python desktop app that bundles a small number of open-source AI models. Here's exactly what they are and where they come from, because you shouldn't install a speech tool that won't tell you.
+          VoxWild is a Python desktop app that bundles a small number of open-source AI text-to-speech models. Here's exactly what they are and where they come from, because you shouldn't install a speech synthesis tool that won't tell you.
         </p>
       </div>
 
@@ -1158,8 +1351,8 @@
   <section id="faq">
     <div class="container">
       <div class="section-head">
-        <div class="eyebrow">Questions</div>
-        <h2>The ones people actually ask.</h2>
+        <div class="eyebrow">Frequently asked questions</div>
+        <h2>VoxWild FAQ — the ones people actually ask.</h2>
       </div>
 
       <div class="faq-group">
@@ -1270,10 +1463,10 @@
   <!-- ─── DOWNLOAD FOOTER ─────────────────────────────────────────────────── -->
   <section class="download-section">
     <div class="container">
-      <h2>Grab it.</h2>
-      <a href="/download" class="btn btn-lg">Download for Windows</a>
+      <h2>Download VoxWild for Windows.</h2>
+      <a href="/download" class="btn btn-lg">Download Free</a>
       <div class="download-meta mono">
-        VoxWild-Setup.exe · ~377 MB · Windows 10/11 · v1.1.2<br />
+        VoxWild-Setup.exe · ~377 MB · Windows 10/11 64-bit · v1.1.2<br />
         SmartScreen will warn the first time — click "More info" then "Run anyway". The app is unsigned (see FAQ #01).
       </div>
     </div>
