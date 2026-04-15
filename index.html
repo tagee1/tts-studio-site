@@ -272,11 +272,23 @@
       margin: 0 auto;
       padding: 0 24px;
     }
+    @media (max-width: 560px) {
+      .container { padding: 0 18px; }
+    }
 
     section {
       position: relative;
       padding: 96px 0;
     }
+    @media (max-width: 780px) {
+      section { padding: 72px 0; }
+    }
+    @media (max-width: 480px) {
+      section { padding: 56px 0; }
+    }
+
+    /* Prevent any overflow from long unbreakable words */
+    h1, h2, h3, p { overflow-wrap: break-word; word-break: normal; }
 
     /* Hairline section divider — emerald 3-bar equalizer glyph */
     .divider {
@@ -361,19 +373,27 @@
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 28px;
+      gap: 24px;
       list-style: none;
+      flex-wrap: nowrap;
     }
     .nav-links a {
       color: var(--txt2);
       font-size: 14px;
       font-family: var(--font-mono);
       border: none;
+      white-space: nowrap;
     }
     .nav-links a:hover { color: var(--txt); }
-    .nav-links a.btn { color: var(--bg); }
-    @media (max-width: 720px) {
-      .nav-links li:not(:last-child) { display: none; }
+    .nav-links a.btn { color: #062018; }
+    @media (max-width: 820px) {
+      .nav-links li:nth-child(1),
+      .nav-links li:nth-child(2),
+      .nav-links li:nth-child(3) { display: none; }
+    }
+    @media (max-width: 520px) {
+      .nav-links li { display: none !important; }
+      .nav-links li:last-child { display: block !important; }
     }
 
     /* ─── Buttons (glossy) ────────────────────────────────────────────────── */
@@ -456,27 +476,31 @@
 
     /* ─── Hero ────────────────────────────────────────────────────────────── */
     .hero {
-      padding: 96px 0 120px;
+      padding: 80px 0 96px;
       position: relative;
     }
     .hero-grid {
       display: grid;
       grid-template-columns: 1.4fr 1fr;
-      gap: 80px;
+      gap: 64px;
       align-items: center;
     }
-    @media (max-width: 880px) {
-      .hero-grid { grid-template-columns: 1fr; gap: 48px; }
-      .hero { padding: 64px 0 80px; }
+    @media (max-width: 960px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 36px; }
+      .hero { padding: 56px 0 72px; }
+    }
+    @media (max-width: 480px) {
+      .hero { padding: 40px 0 56px; }
     }
 
     .hero h1 {
-      font-size: clamp(44px, 7.5vw, 92px);
-      line-height: 0.98;
-      letter-spacing: -0.035em;
+      font-size: clamp(32px, 6.2vw, 80px);
+      line-height: 1.02;
+      letter-spacing: -0.03em;
       font-weight: 700;
       color: var(--txt);
-      margin-bottom: 28px;
+      margin-bottom: 24px;
+      hyphens: none;
     }
     .hero h1 .line-sub {
       display: block;
@@ -507,10 +531,10 @@
     }
 
     .hero-sub {
-      font-size: 18px;
+      font-size: clamp(15px, 1.7vw, 18px);
       color: var(--txt2);
       max-width: 52ch;
-      margin-bottom: 36px;
+      margin-bottom: 32px;
       line-height: 1.55;
     }
 
@@ -518,13 +542,17 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      gap: 20px;
+      gap: 16px;
       margin-bottom: 18px;
     }
     .hero-meta {
       font-family: var(--font-mono);
-      font-size: 12.5px;
+      font-size: clamp(11px, 1.3vw, 12.5px);
       color: var(--txt3);
+      word-break: break-all;
+    }
+    @media (max-width: 480px) {
+      .hero-cta .btn { width: 100%; justify-content: center; }
     }
 
     /* Hero right — breathing bar equalizer (decorative) */
@@ -532,12 +560,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 14px;
-      height: 320px;
+      gap: clamp(8px, 1.2vw, 14px);
+      height: clamp(140px, 28vw, 320px);
     }
     .hero-visual .bar {
       position: relative;
-      width: 18px;
+      width: clamp(10px, 1.6vw, 18px);
       background: linear-gradient(180deg, #2ee5a0 0%, #00d98b 50%, #00a36a 100%);
       border-radius: 3px;
       animation: bar-breathe 3.2s ease-in-out infinite;
@@ -567,32 +595,33 @@
       0%, 100% { transform: scaleY(0.88); opacity: 0.85; }
       50%      { transform: scaleY(1.12); opacity: 1; }
     }
-    @media (max-width: 880px) {
-      .hero-visual { height: 160px; }
-      .hero-visual .bar { width: 14px; }
-    }
 
     /* ─── Wedge (full-bleed pricing punch line) ───────────────────────────── */
     .wedge {
-      padding: 120px 0;
+      padding: 96px 0;
       border-top: 1px solid var(--rule);
       border-bottom: 1px solid var(--rule);
     }
+    @media (max-width: 780px) {
+      .wedge { padding: 72px 0; }
+    }
     .wedge-text {
-      font-size: clamp(32px, 5.2vw, 72px);
+      font-size: clamp(24px, 4.6vw, 64px);
       font-weight: 600;
-      line-height: 1.08;
-      letter-spacing: -0.028em;
+      line-height: 1.15;
+      letter-spacing: -0.025em;
       color: var(--txt);
-      max-width: 18ch;
+      max-width: 22ch;
     }
     .wedge-text .hl {
       background: linear-gradient(180deg, #2ee5a0 0%, #00d98b 100%);
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      white-space: nowrap;
       filter: drop-shadow(0 0 24px rgba(0, 217, 139, 0.35));
+    }
+    @media (min-width: 640px) {
+      .wedge-text .hl { white-space: nowrap; }
     }
     .wedge-text .low { color: var(--txt3); }
     .wedge-foot {
@@ -628,7 +657,11 @@
     @media (max-width: 780px) {
       .engines { grid-template-columns: 1fr; }
       .engine + .engine { border-left: none; border-top: 1px solid var(--border); }
-      .engine { padding: 32px 24px; }
+      .engine { padding: 28px 20px; }
+    }
+    @media (max-width: 480px) {
+      .engine { padding: 24px 18px; }
+      .specs .k { min-width: 90px; }
     }
     .engine .tag {
       display: inline-block;
@@ -966,13 +999,19 @@
 
     /* ─── Download footer ─────────────────────────────────────────────────── */
     .download-section {
-      padding: 120px 0;
+      padding: 96px 0;
       border-top: 1px solid var(--rule);
       text-align: center;
     }
+    @media (max-width: 780px) {
+      .download-section { padding: 72px 0; }
+    }
     .download-section h2 {
-      font-size: clamp(36px, 5vw, 64px);
+      font-size: clamp(28px, 4.4vw, 56px);
       margin-bottom: 24px;
+    }
+    .download-section .download-meta {
+      word-break: break-all;
     }
     .download-meta {
       font-family: var(--font-mono);
